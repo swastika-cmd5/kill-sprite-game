@@ -44,7 +44,7 @@ function startGame() {
   timerDisplay.textContent = timeLeft;
 
   const diff = difficulty.value;
-  moveSpeed = diff === "hard" ? 500 : 1700;
+  moveSpeed = diff === "hard" ? 300 : 1500;
 
   startScreen.style.display = "none";
   gameScreen.style.display = "block";
