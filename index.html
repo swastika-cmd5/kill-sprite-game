@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Click Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="startScreen">
+    <h1>PIXEL CLICKER</h1>
+    <input type="file" id="imageInput" accept="image/*" />
+    <br><br>
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="hard">Difficult</option>
+    </select>
+    <br><br>
+    <img id="preview" src="" alt="Your Image Will Appear Here" />
+    <br><br>
+    <button onclick="startGame()">START GAME</button>
+  </div>
+
+  <div id="gameScreen" style="display:none;">
+    <div id="scoreDisplay">Score: <span id="score">0</span></div>
+    <div id="highScoreDisplay">🏆 High Score: <span id="highScore">0</span></div>
+    <div id="timerDisplay">⌛ <span id="timer">30</span>s</div>
+    <div id="spriteWrapper">
+      <img id="sprite" src="" alt="Sprite" />
+      <div id="hitbox"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
